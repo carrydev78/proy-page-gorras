@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelos | Nexo Caps</title>
+  <meta name="description" content="Explora todos los modelos de gorras Nexo Caps: detalles, materiales, tallas, colores y precios." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#111318',
+            lime: '#d7ff4f',
+            cream: '#f7f6f2'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Outfit', 'Inter', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 24px 60px -24px rgba(17,19,24,.35)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-cream font-sans text-ink antialiased selection:bg-lime selection:text-ink">
+
+  <!-- ========== BIBLIOTECA DE SVG ========== -->
+  <svg class="hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="capShadow" x="-25%" y="-25%" width="150%" height="160%">
+        <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000" flood-opacity="0.22" />
+      </filter>
+    </defs>
+
+    <symbol id="cap" viewBox="0 0 400 260">
+      <g filter="url(#capShadow)">
+        <path d="M46 150 C72 124 328 124 354 150 C330 185 70 185 46 150 Z" fill="var(--brim,#111827)" />
+        <path d="M72 150 C72 78 118 34 200 34 C282 34 328 78 328 150 C282 132 118 132 72 150 Z" fill="var(--crown,#20242c)" />
+        <path d="M200 36 C188 72 188 110 200 141" fill="none" stroke="var(--seam,rgba(255,255,255,.14))" stroke-width="3" />
+        <path d="M136 48 C150 80 154 112 150 140" fill="none" stroke="var(--seam,rgba(255,255,255,.14))" stroke-width="3" />
+        <path d="M264 48 C250 80 246 112 250 140" fill="none" stroke="var(--seam,rgba(255,255,255,.14))" stroke-width="3" />
+        <path d="M70 151 C110 140 290 140 330 151" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="4" stroke-linecap="round" />
+        <circle cx="200" cy="34" r="9" fill="var(--accent,#d7ff4f)" />
+        <rect x="164" y="86" width="72" height="44" rx="13" fill="var(--patch,#f8fafc)" />
+        <text x="200" y="116" text-anchor="middle" font-family="Outfit, Arial, sans-serif" font-size="24" font-weight="800" fill="var(--patchText,#111827)">N</text>
+      </g>
+    </symbol>
+
+    <symbol id="i-cart" viewBox="0 0 24 24">
+      <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="10" cy="20" r="1.4" fill="currentColor" />
+      <circle cx="18" cy="20" r="1.4" fill="currentColor" />
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z" fill="currentColor" />
+    </symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24">
+      <path d="M3 6h11v10H3zM14 9h4l3 3v4h-7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+      <circle cx="7" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7" />
+      <circle cx="18" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7" />
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+      <path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24">
+      <path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8" />
+      <path d="m16.5 16.5 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+      <path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a5 5 0 0 1-2-2l1-1-1-2-1.5 1Z" fill="currentColor" />
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7" />
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <!-- ========== HEADER ========== -->
+  <header class="sticky top-0 z-50 border-b border-ink/5 bg-cream/90 backdrop-blur-lg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <input type="checkbox" id="mobile-menu" class="peer hidden" />
+
+      <div class="flex h-16 items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-2" aria-label="Nexo Caps, ir al inicio">
+          <span class="grid h-9 w-9 place-items-center rounded-xl bg-ink text-lime">
+            <svg class="h-7 w-7"><use href="#cap" /></svg>
+          </span>
+          <span class="font-display text-lg font-extrabold tracking-tight">NEXO<span class="text-lime">CAPS</span></span>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex" aria-label="Navegación principal">
+          <a class="transition hover:text-ink" href="index.html">Inicio</a>
+          <a class="rounded-full bg-lime px-4 py-2 text-ink" href="catalogo.html" aria-current="page">Modelos</a>
+          <a class="transition hover:text-ink" href="index.html#beneficios">Por qué nosotros</a>
+          <a class="transition hover:text-ink" href="index.html#opiniones">Opiniones</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="#modelos" class="relative grid h-10 w-10 place-items-center rounded-full border border-ink/10 bg-white transition hover:border-ink hover:bg-ink hover:text-lime" aria-label="Ver carrito">
+            <svg class="h-5 w-5"><use href="#i-cart" /></svg>
+            <span id="cart-count" class="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-lime text-[11px] font-extrabold text-ink transition-transform">0</span>
+          </a>
+          <label for="mobile-menu" class="grid h-10 w-10 cursor-pointer place-items-center rounded-full border border-ink/10 bg-white md:hidden" aria-label="Abrir menú">
+            <svg class="h-5 w-5"><use href="#i-menu" /></svg>
+          </label>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="hidden space-y-1 border-t border-ink/5 pb-4 pt-3 peer-checked:block md:hidden" aria-label="Navegación móvil">
+        <a class="block rounded-xl px-3 py-2.5 text-sm font-semibold hover:bg-white" href="index.html">Inicio</a>
+        <a class="block rounded-xl bg-lime px-3 py-2.5 text-sm font-bold" href="catalogo.html" aria-current="page">Modelos</a>
+        <a class="block rounded-xl px-3 py-2.5 text-sm font-semibold hover:bg-white" href="index.html#beneficios">Por qué nosotros</a>
+        <a class="block rounded-xl px-3 py-2.5 text-sm font-semibold hover:bg-white" href="index.html#opiniones">Opiniones</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="modelos">
+    <!-- ========== INTRO ========== -->
+    <section class="relative overflow-hidden border-b border-ink/5 bg-white">
+      <div class="pointer-events-none absolute -right-24 -top-32 h-96 w-96 rounded-full bg-lime/25 blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-40 left-1/4 h-80 w-80 rounded-full bg-amber-200/40 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-400" aria-label="Ruta de navegación">
+          <a class="transition hover:text-ink" href="index.html">Inicio</a>
+          <span>/</span>
+          <span class="text-ink">Modelos</span>
+        </nav>
+
+        <div class="mt-7 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+          <div class="max-w-2xl">
+            <span class="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-400">Colección 2026</span>
+            <h1 class="mt-3 font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
+              Encuentra tu<br />
+              <span class="relative inline-block">
+                próxima gorra<span class="absolute -bottom-2 left-0 h-3 w-full -rotate-1 rounded-full bg-lime/70"></span>
+              </span>
+            </h1>
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-slate-600">
+              Cada modelo con sus materiales, ajuste, tallas y colores. Elige el que va contigo o personalízalo por completo.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="rounded-2xl bg-ink px-5 py-3 text-white">
+              <span id="result-count" class="font-display text-2xl font-extrabold">6</span>
+              <span class="ml-2 text-xs font-semibold text-slate-300">modelos</span>
+            </div>
+            <a href="index.html#personaliza" class="inline-flex items-center gap-2 rounded-2xl border border-ink/10 bg-white px-5 py-3 text-sm font-bold transition hover:border-ink hover:bg-lime">
+              <svg class="h-4 w-4"><use href="#i-sparkles" /></svg>
+              Personalizar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FILTROS ========== -->
+    <section class="py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 rounded-3xl bg-white p-4 shadow-sm ring-1 ring-ink/5 lg:flex-row lg:items-center lg:justify-between">
+          <div id="filters" class="flex flex-wrap gap-2">
+            <button type="button" data-filter="todos" class="filter-btn rounded-full bg-ink px-4 py-2 text-xs font-bold text-lime transition">Todos</button>
+            <button type="button" data-filter="clasicas" class="filter-btn rounded-full bg-cream px-4 py-2 text-xs font-bold text-slate-600 transition hover:bg-ink hover:text-lime">Clásicas</button>
+            <button type="button" data-filter="snapback" class="filter-btn rounded-full bg-cream px-4 py-2 text-xs font-bold text-slate-600 transition hover:bg-ink hover:text-lime">Snapback</button>
+            <button type="button" data-filter="edicion" class="filter-btn rounded-full bg-cream px-4 py-2 text-xs font-bold text-slate-600 transition hover:bg-ink hover:text-lime">Edición limitada</button>
+            <button type="button" data-filter="personalizables" class="filter-btn rounded-full bg-cream px-4 py-2 text-xs font-bold text-slate-600 transition hover:bg-ink hover:text-lime">Personalizables</button>
+          </div>
+
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <label class="relative block">
+              <span class="sr-only">Buscar modelo</span>
+              <svg class="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"><use href="#i-search" /></svg>
+              <input id="search" type="search" placeholder="Buscar modelo..." class="w-full rounded-full border border-ink/10 bg-cream/60 py-2.5 pl-10 pr-4 text-sm outline-none transition placeholder:text-slate-400 focus:border-ink focus:bg-white sm:w-56" />
+            </label>
+            <label class="relative block">
+              <span class="sr-only">Ordenar por</span>
+              <select id="sort" class="w-full appearance-none rounded-full border border-ink/10 bg-cream/60 px-4 py-2.5 pr-9 text-sm font-semibold outline-none transition focus:border-ink focus:bg-white sm:w-52">
+                <option value="destacado">Destacados</option>
+                <option value="menor">Precio: menor a mayor</option>
+                <option value="mayor">Precio: mayor a menor</option>
+                <option value="nombre">Nombre A-Z</option>
+              </select>
+              <svg class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 rotate-90 text-slate-400"><use href="#i-arrow" /></svg>
+            </label>
+          </div>
+        </div>
+
+        <!-- ========== GRID DE PRODUCTOS ========== -->
+        <div id="product-grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- 1 -->
+          <article class="product-card group overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft" data-category="clasicas personalizables" data-name="Nexo Classic" data-price="29900">
+            <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200/60">
+              <span class="absolute left-3 top-3 rounded-full bg-ink px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-lime">Más vendida</span>
+              <button type="button" class="detail-btn absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-ink shadow transition hover:bg-ink hover:text-lime" data-product="nexo" aria-label="Ver detalles de Nexo Classic"><svg class="h-4 w-4"><use href="#i-arrow" /></svg></button>
+              <svg class="h-44 w-full transition duration-500 group-hover:scale-105" style="--crown:#20242c; --brim:#0f1115; --accent:#d7ff4f; --patch:#f7f6f2; --patchText:#111827;" role="img" aria-label="Gorra Nexo Classic negra"><use href="#cap" /></svg>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-3">
+                <div><h2 class="font-display text-lg font-extrabold">Nexo Classic</h2><p class="mt-1 text-xs font-medium text-slate-500">Negra · Ajuste clásico</p></div>
+                <span class="whitespace-nowrap font-display text-lg font-extrabold">$29.900</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Algodón peinado con parche frontal bordado. El esencial que combina con todo.</p>
+              <dl class="mt-4 grid grid-cols-2 gap-3 border-t border-ink/5 pt-4 text-xs">
+                <div><dt class="font-bold text-slate-400">Material</dt><dd class="mt-0.5 font-semibold">Algodón peinado</dd></div>
+                <div><dt class="font-bold text-slate-400">Ajuste</dt><dd class="mt-0.5 font-semibold">Regulable</dd></div>
+                <div><dt class="font-bold text-slate-400">Tallas</dt><dd class="mt-0.5 font-semibold">S/M · M/L · XL</dd></div>
+                <div><dt class="font-bold text-slate-400">Colores</dt><dd class="mt-0.5 font-semibold">Negro / Lima</dd></div>
+              </dl>
+              <div class="mt-5 flex items-center justify-between gap-2">
+                <div class="flex gap-0.5 text-amber-400" aria-label="5 de 5 estrellas">
+                  <svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg>
+                </div>
+                <button type="button" class="add-to-cart inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-cart" /></svg> Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card group overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft" data-category="clasicas" data-name="Sunset Drive" data-price="32900">
+            <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-orange-50 to-orange-100">
+              <span class="absolute left-3 top-3 rounded-full bg-orange-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">Nuevo</span>
+              <button type="button" class="detail-btn absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-ink shadow transition hover:bg-ink hover:text-lime" data-product="sunset" aria-label="Ver detalles de Sunset Drive"><svg class="h-4 w-4"><use href="#i-arrow" /></svg></button>
+              <svg class="h-44 w-full transition duration-500 group-hover:scale-105" style="--crown:#f97316; --brim:#c2410c; --accent:#fff7ed; --patch:#fff7ed; --patchText:#c2410c;" role="img" aria-label="Gorra Sunset Drive naranja"><use href="#cap" /></svg>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-3">
+                <div><h2 class="font-display text-lg font-extrabold">Sunset Drive</h2><p class="mt-1 text-xs font-medium text-slate-500">Naranja · Visera curva</p></div>
+                <span class="whitespace-nowrap font-display text-lg font-extrabold">$32.900</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Tono vibrante y visera precurvada para un look casual con mucha personalidad.</p>
+              <dl class="mt-4 grid grid-cols-2 gap-3 border-t border-ink/5 pt-4 text-xs">
+                <div><dt class="font-bold text-slate-400">Material</dt><dd class="mt-0.5 font-semibold">Lona algodón</dd></div>
+                <div><dt class="font-bold text-slate-400">Ajuste</dt><dd class="mt-0.5 font-semibold">Hebilla metal</dd></div>
+                <div><dt class="font-bold text-slate-400">Tallas</dt><dd class="mt-0.5 font-semibold">Única · Ajustable</dd></div>
+                <div><dt class="font-bold text-slate-400">Colores</dt><dd class="mt-0.5 font-semibold">Naranja / Crema</dd></div>
+              </dl>
+              <div class="mt-5 flex items-center justify-between gap-2">
+                <div class="flex gap-0.5 text-amber-400" aria-label="5 de 5 estrellas">
+                  <svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg>
+                </div>
+                <button type="button" class="add-to-cart inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-cart" /></svg> Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card group overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft" data-category="edicion snapback personalizables" data-name="Verde Lima" data-price="34900">
+            <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-lime/30 to-lime/60">
+              <span class="absolute left-3 top-3 rounded-full bg-lime px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-ink">Drop limitado</span>
+              <button type="button" class="detail-btn absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-ink shadow transition hover:bg-ink hover:text-lime" data-product="lima" aria-label="Ver detalles de Verde Lima"><svg class="h-4 w-4"><use href="#i-arrow" /></svg></button>
+              <svg class="h-44 w-full transition duration-500 group-hover:scale-105" style="--crown:#d7ff4f; --brim:#111827; --accent:#111827; --patch:#111827; --patchText:#d7ff4f;" role="img" aria-label="Gorra Verde Lima"><use href="#cap" /></svg>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-3">
+                <div><h2 class="font-display text-lg font-extrabold">Verde Lima</h2><p class="mt-1 text-xs font-medium text-slate-500">Lima · High crown</p></div>
+                <span class="whitespace-nowrap font-display text-lg font-extrabold">$34.900</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Edición limitada con estructura alta y contraste lima/negro. Difícil de pasar por alto.</p>
+              <dl class="mt-4 grid grid-cols-2 gap-3 border-t border-ink/5 pt-4 text-xs">
+                <div><dt class="font-bold text-slate-400">Material</dt><dd class="mt-0.5 font-semibold">Poliéster técnico</dd></div>
+                <div><dt class="font-bold text-slate-400">Ajuste</dt><dd class="mt-0.5 font-semibold">Snapback</dd></div>
+                <div><dt class="font-bold text-slate-400">Tallas</dt><dd class="mt-0.5 font-semibold">Única · Snapback</dd></div>
+                <div><dt class="font-bold text-slate-400">Colores</dt><dd class="mt-0.5 font-semibold">Lima / Negro</dd></div>
+              </dl>
+              <div class="mt-5 flex items-center justify-between gap-2">
+                <div class="flex gap-0.5 text-amber-400" aria-label="5 de 5 estrellas">
+                  <svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg>
+                </div>
+                <button type="button" class="add-to-cart inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-cart" /></svg> Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card group overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft" data-category="clasicas personalizables" data-name="Azul Cielo" data-price="31900">
+            <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-sky-50 to-sky-100">
+              <span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-sky-700">Unisex</span>
+              <button type="button" class="detail-btn absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-ink shadow transition hover:bg-ink hover:text-lime" data-product="cielo" aria-label="Ver detalles de Azul Cielo"><svg class="h-4 w-4"><use href="#i-arrow" /></svg></button>
+              <svg class="h-44 w-full transition duration-500 group-hover:scale-105" style="--crown:#38bdf8; --brim:#0c4a6e; --accent:#f8fafc; --patch:#f8fafc; --patchText:#0c4a6e;" role="img" aria-label="Gorra Azul Cielo"><use href="#cap" /></svg>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-3">
+                <div><h2 class="font-display text-lg font-extrabold">Azul Cielo</h2><p class="mt-1 text-xs font-medium text-slate-500">Celeste · Unisex</p></div>
+                <span class="whitespace-nowrap font-display text-lg font-extrabold">$31.900</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Fresco y versátil. Un tono que combina con casi cualquier look de temporada.</p>
+              <dl class="mt-4 grid grid-cols-2 gap-3 border-t border-ink/5 pt-4 text-xs">
+                <div><dt class="font-bold text-slate-400">Material</dt><dd class="mt-0.5 font-semibold">Algodón lavado</dd></div>
+                <div><dt class="font-bold text-slate-400">Ajuste</dt><dd class="mt-0.5 font-semibold">Regulable</dd></div>
+                <div><dt class="font-bold text-slate-400">Tallas</dt><dd class="mt-0.5 font-semibold">S/M · M/L</dd></div>
+                <div><dt class="font-bold text-slate-400">Colores</dt><dd class="mt-0.5 font-semibold">Cielo / Azul profundo</dd></div>
+              </dl>
+              <div class="mt-5 flex items-center justify-between gap-2">
+                <div class="flex gap-0.5 text-amber-400" aria-label="5 de 5 estrellas">
+                  <svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg>
+                </div>
+                <button type="button" class="add-to-cart inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-cart" /></svg> Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card group overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft" data-category="clasicas" data-name="Rosa Polvo" data-price="30900">
+            <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 to-pink-100">
+              <span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-pink-700">Soft tone</span>
+              <button type="button" class="detail-btn absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-ink shadow transition hover:bg-ink hover:text-lime" data-product="rosa" aria-label="Ver detalles de Rosa Polvo"><svg class="h-4 w-4"><use href="#i-arrow" /></svg></button>
+              <svg class="h-44 w-full transition duration-500 group-hover:scale-105" style="--crown:#f9a8d4; --brim:#9d174d; --accent:#ffffff; --patch:#ffffff; --patchText:#9d174d;" role="img" aria-label="Gorra Rosa Polvo"><use href="#cap" /></svg>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-3">
+                <div><h2 class="font-display text-lg font-extrabold">Rosa Polvo</h2><p class="mt-1 text-xs font-medium text-slate-500">Rosa · Low profile</p></div>
+                <span class="whitespace-nowrap font-display text-lg font-extrabold">$30.900</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Suave a la vista y cómoda al tacto. Perfil bajo para un estilo más relajado.</p>
+              <dl class="mt-4 grid grid-cols-2 gap-3 border-t border-ink/5 pt-4 text-xs">
+                <div><dt class="font-bold text-slate-400">Material</dt><dd class="mt-0.5 font-semibold">Algodón suave</dd></div>
+                <div><dt class="font-bold text-slate-400">Ajuste</dt><dd class="mt-0.5 font-semibold">Hebilleta</dd></div>
+                <div><dt class="font-bold text-slate-400">Tallas</dt><dd class="mt-0.5 font-semibold">Única · Ajustable</dd></div>
+                <div><dt class="font-bold text-slate-400">Colores</dt><dd class="mt-0.5 font-semibold">Rosa / Frambuesa</dd></div>
+              </dl>
+              <div class="mt-5 flex items-center justify-between gap-2">
+                <div class="flex gap-0.5 text-amber-400" aria-label="5 de 5 estrellas">
+                  <svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg>
+                </div>
+                <button type="button" class="add-to-cart inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-cart" /></svg> Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card group overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft" data-category="snapback personalizables" data-name="Camo Urban" data-price="33900">
+            <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-lime/10 to-amber-100/70">
+              <span class="absolute left-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-ink">Outdoor</span>
+              <button type="button" class="detail-btn absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-ink shadow transition hover:bg-ink hover:text-lime" data-product="camo" aria-label="Ver detalles de Camo Urban"><svg class="h-4 w-4"><use href="#i-arrow" /></svg></button>
+              <svg class="h-44 w-full transition duration-500 group-hover:scale-105" style="--crown:#4d7c0f; --brim:#1a2e05; --accent:#eab308; --patch:#eab308; --patchText:#1a2e05;" role="img" aria-label="Gorra Camo Urban verde"><use href="#cap" /></svg>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-3">
+                <div><h2 class="font-display text-lg font-extrabold">Camo Urban</h2><p class="mt-1 text-xs font-medium text-slate-500">Verde olivo · Snapback</p></div>
+                <span class="whitespace-nowrap font-display text-lg font-extrabold">$33.900</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">Inspirada en la calle y el outdoor. Resistente, cómoda y con carácter.</p>
+              <dl class="mt-4 grid grid-cols-2 gap-3 border-t border-ink/5 pt-4 text-xs">
+                <div><dt class="font-bold text-slate-400">Material</dt><dd class="mt-0.5 font-semibold">Ripstop reforzado</dd></div>
+                <div><dt class="font-bold text-slate-400">Ajuste</dt><dd class="mt-0.5 font-semibold">Snapback</dd></div>
+                <div><dt class="font-bold text-slate-400">Tallas</dt><dd class="mt-0.5 font-semibold">M/L · XL</dd></div>
+                <div><dt class="font-bold text-slate-400">Colores</dt><dd class="mt-0.5 font-semibold">Olivo / Mostaza</dd></div>
+              </dl>
+              <div class="mt-5 flex items-center justify-between gap-2">
+                <div class="flex gap-0.5 text-amber-400" aria-label="5 de 5 estrellas">
+                  <svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg><svg class="h-3.5 w-3.5"><use href="#i-star" /></svg>
+                </div>
+                <button type="button" class="add-to-cart inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-cart" /></svg> Añadir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p id="empty-state" class="mt-10 hidden rounded-3xl bg-white p-10 text-center text-sm text-slate-500 shadow-sm ring-1 ring-ink/5">
+          No encontramos modelos con esos filtros. Prueba con otra búsqueda.
+        </p>
+
+        <div class="mt-8 flex justify-center">
+          <a href="index.html" class="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-6 py-3 text-sm font-bold transition hover:border-ink hover:bg-lime">
+            <svg class="h-4 w-4 rotate-180"><use href="#i-arrow" /></svg>
+            Volver al inicio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AYUDA / ENVÍOS ========== -->
+    <section class="bg-white py-16">
+      <div class="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
+        <div class="flex items-start gap-4 rounded-3xl bg-cream/70 p-6">
+          <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-ink text-lime"><svg class="h-5 w-5"><use href="#i-truck" /></svg></span>
+          <div><h3 class="font-display text-sm font-extrabold">Envío en 24 horas</h3><p class="mt-1 text-xs leading-relaxed text-slate-500">Preparamos tu pedido el mismo día hábil.</p></div>
+        </div>
+        <div class="flex items-start gap-4 rounded-3xl bg-cream/70 p-6">
+          <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-lime text-ink"><svg class="h-5 w-5"><use href="#i-shield" /></svg></span>
+          <div><h3 class="font-display text-sm font-extrabold">Compra segura</h3><p class="mt-1 text-xs leading-relaxed text-slate-500">Cambios fáciles dentro de los primeros 15 días.</p></div>
+        </div>
+        <div class="flex items-start gap-4 rounded-3xl bg-cream/70 p-6">
+          <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-ink text-lime"><svg class="h-5 w-5"><use href="#i-sparkles" /></svg></span>
+          <div><h3 class="font-display text-sm font-extrabold">¿Dudas con tu elección?</h3><p class="mt-1 text-xs leading-relaxed text-slate-500">Escríbenos y te ayudamos a elegir modelo y talla.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-ink text-white">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2">
+            <span class="grid h-9 w-9 place-items-center rounded-xl bg-lime text-ink"><svg class="h-7 w-7"><use href="#cap" /></svg></span>
+            <span class="font-display text-lg font-extrabold">NEXO<span class="text-lime">CAPS</span></span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">Gorras con actitud. Diseño, calidad y estilo en cada puntada.</p>
+        </div>
+        <div>
+          <h3 class="font-display text-sm font-extrabold uppercase tracking-wider text-lime">Explora</h3>
+          <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
+            <li><a class="transition hover:text-white" href="catalogo.html">Modelos</a></li>
+            <li><a class="transition hover:text-white" href="index.html#personaliza">Personalización</a></li>
+            <li><a class="transition hover:text-white" href="index.html#beneficios">Nuestra calidad</a></li>
+            <li><a class="transition hover:text-white" href="index.html#opiniones">Opiniones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-display text-sm font-extrabold uppercase tracking-wider text-lime">Ayuda</h3>
+          <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
+            <li><a class="transition hover:text-white" href="index.html#contacto">Envíos y entregas</a></li>
+            <li><a class="transition hover:text-white" href="index.html#contacto">Cambios y devoluciones</a></li>
+            <li><a class="transition hover:text-white" href="index.html#contacto">Guía de tallas</a></li>
+            <li><a class="transition hover:text-white" href="index.html#contacto">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-display text-sm font-extrabold uppercase tracking-wider text-lime">Escríbenos</h3>
+          <p class="mt-4 text-sm text-slate-400">hola@nexocaps.com</p>
+          <p class="mt-1 text-sm text-slate-400">Lun a Vie · 9:00 a 18:00</p>
+          <div class="mt-5 flex gap-3">
+            <a href="#" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-instagram" /></svg></a>
+            <a href="https://wa.me/51999999999" target="_blank" rel="noopener" aria-label="WhatsApp" class="grid h-9 w-9 place-items-center rounded-full bg-white/10 transition hover:bg-lime hover:text-ink"><svg class="h-4 w-4"><use href="#i-whatsapp" /></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
+        <p>© 2026 Nexo Caps. Todos los derechos reservados.</p>
+        <p>Hecho con estilo para quienes no siguen el rebaño.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20info%20sobre%20sus%20gorras" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp" class="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-2xl transition hover:scale-110">
+    <svg class="h-7 w-7"><use href="#i-whatsapp" /></svg>
+  </a>
+
+  <!-- ========== MODAL DE DETALLE ========== -->
+  <div id="detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div id="modal-backdrop" class="absolute inset-0 bg-ink/70 backdrop-blur-sm"></div>
+    <div class="relative w-full max-w-4xl overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+      <button id="modal-close" type="button" class="absolute right-4 top-4 z-10 grid h-9 w-9 place-items-center rounded-full bg-ink text-white transition hover:bg-lime hover:text-ink" aria-label="Cerrar detalle">
+        <svg class="h-4 w-4"><use href="#i-x" /></svg>
+      </button>
+
+      <div class="grid md:grid-cols-2">
+        <div class="flex items-center justify-center bg-gradient-to-br from-cream to-slate-100 p-8">
+          <svg id="modal-cap" class="w-full max-w-sm" role="img" aria-label="Vista ampliada de la gorra"><use href="#cap" /></svg>
+        </div>
+
+        <div class="p-6 sm:p-8">
+          <span id="modal-badge" class="inline-block rounded-full bg-lime px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-ink"></span>
+          <h2 id="modal-title" class="mt-4 font-display text-3xl font-extrabold"></h2>
+          <p id="modal-subtitle" class="mt-1 text-sm font-medium text-slate-500"></p>
+          <p id="modal-description" class="mt-4 text-sm leading-relaxed text-slate-600"></p>
+
+          <dl class="mt-6 grid grid-cols-2 gap-4 rounded-2xl bg-cream p-4 text-xs">
+            <div><dt class="font-bold text-slate-400">Material</dt><dd id="modal-material" class="mt-0.5 font-semibold"></dd></div>
+            <div><dt class="font-bold text-slate-400">Ajuste</dt><dd id="modal-fit" class="mt-0.5 font-semibold"></dd></div>
+            <div><dt class="font-bold text-slate-400">Tallas</dt><dd id="modal-sizes" class="mt-0.5 font-semibold"></dd></div>
+            <div><dt class="font-bold text-slate-400">Colores</dt><dd id="modal-colors" class="mt-0.5 font-semibold"></dd></div>
+          </dl>
+
+          <div class="mt-6">
+            <p class="text-xs font-bold uppercase tracking-wide text-slate-400">Color</p>
+            <div id="modal-swatches" class="mt-2 flex flex-wrap gap-2"></div>
+          </div>
+
+          <div class="mt-5">
+            <p class="text-xs font-bold uppercase tracking-wide text-slate-400">Talla</p>
+            <div id="modal-size-options" class="mt-2 flex flex-wrap gap-2"></div>
+          </div>
+
+          <div class="mt-7 flex items-center justify-between gap-4">
+            <div>
+              <p class="text-xs text-slate-400">Precio</p>
+              <p id="modal-price" class="font-display text-2xl font-extrabold"></p>
+            </div>
+            <div class="flex items-center gap-2 rounded-full border border-ink/10 p-1">
+              <button id="qty-minus" type="button" class="grid h-8 w-8 place-items-center rounded-full bg-cream font-bold transition hover:bg-lime" aria-label="Reducir cantidad">−</button>
+              <span id="qty" class="w-7 text-center text-sm font-extrabold">1</span>
+              <button id="qty-plus" type="button" class="grid h-8 w-8 place-items-center rounded-full bg-cream font-bold transition hover:bg-lime" aria-label="Aumentar cantidad">+</button>
+            </div>
+          </div>
+
+          <button id="modal-add" type="button" class="mt-5 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-extrabold text-white transition hover:bg-lime hover:text-ink">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notificación -->
+  <div id="toast" role="status" aria-live="polite" class="pointer-events-none fixed bottom-20 right-5 z-[70] translate-y-4 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white opacity-0 shadow-2xl transition-all duration-300">
+    ¡Añadido al carrito! ✓
+  </div>
+
+  <script>
+    /* ---------- Datos de productos para el modal ---------- */
+    const products = {
+      nexo: {
+        name: 'Nexo Classic', price: 29900, priceLabel: '$29.900', badge: 'Más vendida',
+        subtitle: 'Negra · Ajuste clásico',
+        description: 'Algodón peinado con parche frontal bordado. El esencial que combina con todo.',
+        material: 'Algodón peinado', fit: 'Regulable', sizes: 'S/M · M/L · XL', colors: 'Negro / Lima',
+        sizeOptions: ['S/M', 'M/L', 'XL'],
+        swatches: ['#20242c', '#d7ff4f', '#f7f6f2'],
+        vars: { crown: '#20242c', brim: '#0f1115', accent: '#d7ff4f', patch: '#f7f6f2', patchText: '#111827' }
+      },
+      sunset: {
+        name: 'Sunset Drive', price: 32900, priceLabel: '$32.900', badge: 'Nuevo',
+        subtitle: 'Naranja · Visera curva',
+        description: 'Tono vibrante y visera precurvada para un look casual con mucha personalidad.',
+        material: 'Lona algodón', fit: 'Hebilla metal', sizes: 'Única · Ajustable', colors: 'Naranja / Crema',
+        sizeOptions: ['Única', 'Ajustable'],
+        swatches: ['#f97316', '#fff7ed', '#c2410c'],
+        vars: { crown: '#f97316', brim: '#c2410c', accent: '#fff7ed', patch: '#fff7ed', patchText: '#c2410c' }
+      },
+      lima: {
+        name: 'Verde Lima', price: 34900, priceLabel: '$34.900', badge: 'Drop limitado',
+        subtitle: 'Lima · High crown',
+        description: 'Edición limitada con estructura alta y contraste lima/negro. Difícil de pasar por alto.',
+        material: 'Poliéster técnico', fit: 'Snapback', sizes: 'Única · Snapback', colors: 'Lima / Negro',
+        sizeOptions: ['Única', 'Snapback'],
+        swatches: ['#d7ff4f', '#111827', '#eab308'],
+        vars: { crown: '#d7ff4f', brim: '#111827', accent: '#111827', patch: '#111827', patchText: '#d7ff4f' }
+      },
+      cielo: {
+        name: 'Azul Cielo', price: 31900, priceLabel: '$31.900', badge: 'Unisex',
+        subtitle: 'Celeste · Unisex',
+        description: 'Fresco y versátil. Un tono que combina con casi cualquier look de temporada.',
+        material: 'Algodón lavado', fit: 'Regulable', sizes: 'S/M · M/L', colors: 'Cielo / Azul profundo',
+        sizeOptions: ['S/M', 'M/L'],
+        swatches: ['#38bdf8', '#0c4a6e', '#f8fafc'],
+        vars: { crown: '#38bdf8', brim: '#0c4a6e', accent: '#f8fafc', patch: '#f8fafc', patchText: '#0c4a6e' }
+      },
+      rosa: {
+        name: 'Rosa Polvo', price: 30900, priceLabel: '$30.900', badge: 'Soft tone',
+        subtitle: 'Rosa · Low profile',
+        description: 'Suave a la vista y cómoda al tacto. Perfil bajo para un estilo más relajado.',
+        material: 'Algodón suave', fit: 'Hebilleta', sizes: 'Única · Ajustable', colors: 'Rosa / Frambuesa',
+        sizeOptions: ['Única', 'Ajustable'],
+        swatches: ['#f9a8d4', '#9d174d', '#ffffff'],
+        vars: { crown: '#f9a8d4', brim: '#9d174d', accent: '#ffffff', patch: '#ffffff', patchText: '#9d174d' }
+      },
+      camo: {
+        name: 'Camo Urban', price: 33900, priceLabel: '$33.900', badge: 'Outdoor',
+        subtitle: 'Verde olivo · Snapback',
+        description: 'Inspirada en la calle y el outdoor. Resistente, cómoda y con carácter.',
+        material: 'Ripstop reforzado', fit: 'Snapback', sizes: 'M/L · XL', colors: 'Olivo / Mostaza',
+        sizeOptions: ['M/L', 'XL'],
+        swatches: ['#4d7c0f', '#eab308', '#1a2e05'],
+        vars: { crown: '#4d7c0f', brim: '#1a2e05', accent: '#eab308', patch: '#eab308', patchText: '#1a2e05' }
+      }
+    };
+
+    /* ---------- Carrito compartido con index.html ---------- */
+    const cartCount = document.getElementById('cart-count');
+    const toast = document.getElementById('toast');
+    let items = Number(localStorage.getItem('nexoCartCount') || 0);
+    let toastTimer;
+    cartCount.textContent = items;
+
+    function addToCart(quantity) {
+      items += quantity;
+      cartCount.textContent = items;
+      localStorage.setItem('nexoCartCount', items);
+      cartCount.classList.add('scale-125');
+      setTimeout(() => cartCount.classList.remove('scale-125'), 180);
+
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-4');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2200);
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach((button) => {
+      button.addEventListener('click', () => addToCart(1));
+    });
+
+    /* ---------- Filtros, búsqueda y orden ---------- */
+    const cards = Array.from(document.querySelectorAll('.product-card'));
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('search');
+    const sortSelect = document.getElementById('sort');
+    const resultCount = document.getElementById('result-count');
+    const emptyState = document.getElementById('empty-state');
+    let activeFilter = 'todos';
+
+    function applyFilters() {
+      const term = searchInput.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const matchesFilter = activeFilter === 'todos' || card.dataset.category.includes(activeFilter);
+        const matchesSearch = card.dataset.name.toLowerCase().includes(term);
+        const show = matchesFilter && matchesSearch;
+        card.classList.toggle('hidden', !show);
+        if (show) visible += 1;
+      });
+
+      resultCount.textContent = visible;
+      emptyState.classList.toggle('hidden', visible !== 0);
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        filterButtons.forEach((btn) => {
+          const isActive = btn === button;
+          btn.classList.toggle('bg-ink', isActive);
+          btn.classList.toggle('text-lime', isActive);
+          btn.classList.toggle('bg-cream', !isActive);
+          btn.classList.toggle('text-slate-600', !isActive);
+        });
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+
+    sortSelect.addEventListener('change', () => {
+      const mode = sortSelect.value;
+      const sorted = [...cards].sort((a, b) => {
+        if (mode === 'menor') return Number(a.dataset.price) - Number(b.dataset.price);
+        if (mode === 'mayor') return Number(b.dataset.price) - Number(a.dataset.price);
+        if (mode === 'nombre') return a.dataset.name.localeCompare(b.dataset.name);
+        return 0;
+      });
+      const grid = document.getElementById('product-grid');
+      sorted.forEach((card) => grid.appendChild(card));
+    });
+
+    /* ---------- Modal de detalle ---------- */
+    const modal = document.getElementById('detail-modal');
+    const modalCap = document.getElementById('modal-cap');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBadge = document.getElementById('modal-badge');
+    const modalSubtitle = document.getElementById('modal-subtitle');
+    const modalDescription = document.getElementById('modal-description');
+    const modalMaterial = document.getElementById('modal-material');
+    const modalFit = document.getElementById('modal-fit');
+    const modalSizes = document.getElementById('modal-sizes');
+    const modalColors = document.getElementById('modal-colors');
+    const modalPrice = document.getElementById('modal-price');
+    const swatchesBox = document.getElementById('modal-swatches');
+    const sizeBox = document.getElementById('modal-size-options');
+    const qtyLabel = document.getElementById('qty');
+
+    let currentProduct = null;
+    let quantity = 1;
+
+    function setCapVars(vars) {
+      Object.entries(vars).forEach(([key, value]) => modalCap.style.setProperty('--' + key, value));
+    }
+
+    function openModal(key) {
+      const product = products[key];
+      if (!product) return;
+      currentProduct = product;
+      quantity = 1;
+      qtyLabel.textContent = quantity;
+
+      modalBadge.textContent = product.badge;
+      modalTitle.textContent = product.name;
+      modalSubtitle.textContent = product.subtitle;
+      modalDescription.textContent = product.description;
+      modalMaterial.textContent = product.material;
+      modalFit.textContent = product.fit;
+      modalSizes.textContent = product.sizes;
+      modalColors.textContent = product.colors;
+      modalPrice.textContent = product.priceLabel;
+      setCapVars(product.vars);
+      modalCap.setAttribute('aria-label', 'Vista ampliada de ' + product.name);
+
+      swatchesBox.innerHTML = product.swatches.map((color, index) =>
+        '<button type="button" class="swatch h-8 w-8 rounded-full border-2 border-white shadow ring-2 transition hover:scale-110 ' + (index === 0 ? 'ring-ink' : 'ring-transparent') + '" style="background-color:' + color + '" data-color="' + color + '" aria-label="Color ' + (index + 1) + '"></button>'
+      ).join('');
+
+      sizeBox.innerHTML = product.sizeOptions.map((size, index) =>
+        '<button type="button" class="size-option rounded-full px-4 py-2 text-xs font-bold transition ' + (index === 0 ? 'bg-ink text-lime' : 'bg-cream text-slate-600 hover:bg-ink hover:text-lime') + '" data-size="' + size + '">' + size + '</button>'
+      ).join('');
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    document.querySelectorAll('.detail-btn').forEach((button) => {
+      button.addEventListener('click', () => openModal(button.dataset.product));
+    });
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    document.getElementById('modal-backdrop').addEventListener('click', closeModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+    });
+
+    swatchesBox.addEventListener('click', (event) => {
+      const swatch = event.target.closest('.swatch');
+      if (!swatch) return;
+      swatchesBox.querySelectorAll('.swatch').forEach((item) => {
+        item.classList.remove('ring-ink');
+        item.classList.add('ring-transparent');
+      });
+      swatch.classList.remove('ring-transparent');
+      swatch.classList.add('ring-ink');
+      setCapVars({ crown: swatch.dataset.color });
+    });
+
+    sizeBox.addEventListener('click', (event) => {
+      const option = event.target.closest('.size-option');
+      if (!option) return;
+      sizeBox.querySelectorAll('.size-option').forEach((item) => {
+        item.classList.remove('bg-ink', 'text-lime');
+        item.classList.add('bg-cream', 'text-slate-600');
+      });
+      option.classList.remove('bg-cream', 'text-slate-600');
+      option.classList.add('bg-ink', 'text-lime');
+    });
+
+    document.getElementById('qty-minus').addEventListener('click', () => {
+      if (quantity > 1) { quantity -= 1; qtyLabel.textContent = quantity; }
+    });
+    document.getElementById('qty-plus').addEventListener('click', () => {
+      quantity += 1;
+      qtyLabel.textContent = quantity;
+    });
+    document.getElementById('modal-add').addEventListener('click', () => {
+      addToCart(quantity);
+      closeModal();
+    });
+
+    /* ---------- Menú móvil ---------- */
+    const mobileMenu = document.getElementById('mobile-menu');
+    document.querySelectorAll('#mobile-nav a').forEach((link) => {
+      link.addEventListener('click', () => { mobileMenu.checked = false; });
+    });
+  </script>
+</body>
+</html>
